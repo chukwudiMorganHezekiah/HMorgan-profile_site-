@@ -39,7 +39,7 @@
 
             <!--Logo -->
 
-            <a href="#" class="navbar-brand">HMorgan.com</a>
+            <a href='<?php echo $_SERVER["PHP_SELF"];  ?>' class="navbar-brand">HMorgan.com</a>
 
             <!--Collapse menu-->
 
@@ -49,7 +49,7 @@
 
                     <li class="nav-item"><a href="#about" class="nav-link"> About Me</a></li>
 
-                    <li class="nav-item"><a href="" class="nav-link"> Skills</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link"> Skills</a></li>
 
                     <li class="nav-item"><a href="" class="nav-link">Experience</a></li>
 
@@ -129,31 +129,99 @@
 
                         </div>
                     </div>
+                    
+
+                    <!--About ruler-->
+                    <div class="mt-5">
+                    <span class="bg-danger text-white">About Me</span><hr class="bg-danger">
+
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa debitis eaque tempore! Mollitia a modi sit, voluptatem totam hic saepe cupiditate, 
+                    obcaecati quis laborum laboriosam explicabo ratione, necessitatibus voluptas architecto?
+                </div>
+            </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--About me ruler-->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col">
-                <span class="bg-danger text-white">About Me</span><hr class="bg-danger">
-            </div>
-            <div class="col-xs-12 m-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ipsa debitis eaque tempore! Mollitia a modi sit, voluptatem totam hic saepe cupiditate, 
-                obcaecati quis laborum laboriosam explicabo ratione, necessitatibus voluptas architecto?
-            </div>
-        </div>
-    </div>
+  
+    
+               
+           
 
 
     <!--Skills-->
 
-    <div id="skill">
+    <div id="skills">
+        <div class="container">
+            <div class="row">
+                  
+                <div class="col">
+                        <div class="mt-5">
+                                <span class="bg-success text-white">Skills</span><hr class="bg-success">
+            
+                               
+                        </div>
+                    <div class="card bg-white">
+                        <div class="card-header"><h3 class="text-center">My Skills</h3></div>
+                        <div class="card-body">
+                            <div class="m-4">
+                            <h3>HTML5 LANGUAGE</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" style="width:100%;">100%</div>
+                            </div>
+                        </div>
+
+                        <div class="m-4">
+                            <h3 >CSS3 LANGUAGE</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" style="width:97%;">97%</div>
+                            </div>
+                        </div>
+
+                        <div class="m-4">
+                            <h3>JAVASCRIPT PROGRAMMING</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" style="width:95%;">95%</div>
+                            </div>
+                        </div>
+
+                        <div class="m-4">
+                                <h3>MYSQL DATABASE</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" style="width:95%;">95%</div>
+                                </div>
+                            </div>
+
+
+                            <div class="m-4">
+                                    <h3>PHP PROGRAMMING</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-dark" style="width:98%;">98%</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="m-4">
+                                        <h3>JAVA PROGRAMMING</h3>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-dark" style="width:80%;">80%</div>
+                                        </div>
+                                    </div>
+                        </div>
+
+                      
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
+
+    <!--Scroll to top button-->
     <div id="top" style="position:fixed;bottom:30px; right:30px;display:none;cursor:pointer">
         <span style="padding:20px; border:1px red solid;background:#ccc;">Top</span>
 
@@ -210,6 +278,21 @@ body{
 
 #about .fa{
     color:white;
+}
+#about span{
+    padding:10px 20px 10px 20px;
+}
+#about hr{
+    border-width:2px;
+    margin-top:6px;
+}
+#skills span{
+    padding:10px 20px 10px 20px;
+
+}
+#skills hr{
+    border-width:2px;
+    margin-top:6px;
 }
 </style>
 
