@@ -292,22 +292,26 @@
 
                     <div class="card-header">
 
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" id="contact_form" action="pharoah" method="POST">
+                                <div class="text-center text-danger" id="errors">
+
+                                    </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" placeholder="Name" autofocus>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" autofocus>
                             </div>
 
                             <div class="form-group">
-                                    <input type="text" class="form-control" name="email" placeholder="Email">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                              </div>
 
                              <div class="form-group">
-                                    <textarea class="form-control"rows="5" placeholder="Message........"></textarea>
+                                    <textarea class="form-control"rows="5" id="message" placeholder="Message........"></textarea>
                             </div>
                             <div class="form-group">
-                                   <button class="btn btn-success btn-large">Send</button>
+                                   <button class="btn btn-success btn-large" id="send">Send</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
 
@@ -320,6 +324,13 @@
 
 
 <!--Footer-->
+<div id="footer">
+    <div class="container-fluid bg-dark mt-3 p-2">
+        <div class="container">
+            <p class="text-white text-center">Developed by Hezekiah Morgan &copy; 2020</p>
+        </div>
+    </div>
+</div>
 
     <!--Scroll to top button-->
     <div id="top" style="position:fixed;bottom:30px; right:30px;display:none;cursor:pointer">
@@ -330,6 +341,30 @@
 </div>
     
 </body>
+
+<!--script for the contact form-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#contact_form').submit(function(e){
+        e.preventDefault();
+        var name= $("#name").val();
+        var email  = $("#email").val();
+        var message = $("#message").val();
+        var send = $("#send").val();
+        $("#errors").load("contact.php",{
+            name:name,
+            email:email,
+            message:message,
+            send:send
+        })
+    })
+})
+
+
+
+
+</script>
 <script type="text/javascript">
     $(document).ready(function(){
         $(window).scroll(function(e){
@@ -422,6 +457,10 @@ body{
 #contactme span{
     padding:10px 20px 10px 20px;
 
+}
+.error{
+    border:2px solid rgb(244,117,123);
+    box-shadow:0px 2px 1px red;
 }
 </style>
 
