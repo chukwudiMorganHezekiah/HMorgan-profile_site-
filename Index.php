@@ -130,12 +130,14 @@ include_once "includes/top.html";
             $(window).scroll(function(e){
                 var position = window.scrollY;
                 
+                
     
                 if(position >= 250){
                     $("#top").fadeIn("slow")
     
                 }
-            })
+            });
+
         
             
     
@@ -145,6 +147,107 @@ include_once "includes/top.html";
             })
     
         })
+    
+    </script>
+
+    <!--aNIMATIONS TO THE experiences divs-->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var pos = window.scrollY;
+            console.log(pos);
+
+            if(pos >= 1939){
+                
+            
+                $("#seo").addClass("animated bounceInLeft ");
+
+            
+
+            }else{
+                $("#seo").removeClass("animated bounceInLeft ");
+
+            }
+
+
+            if(pos >= 1333){
+                
+            
+                $("#seo").addClass("animated bounceInLeft ");
+
+            
+
+            }else{
+                $("#seo").removeClass("animated bounceInLeft ");
+
+            }
+
+
+
+            //desktop
+
+
+
+            if(pos >= 2398){
+                
+            
+                $("#desktop").addClass("animated bounceInRight ");
+
+            
+
+            }else{
+                $("#desktop").removeClass("animated bounceInRight ");
+
+            }
+
+
+            if(pos >= 1333){
+                
+            
+                $("#desktop").addClass("animated bounceInRight ");
+
+            
+
+            }else{
+                $("#desktop").removeClass("animated bounceInRight ");
+
+            }
+
+
+
+            //youtube
+
+
+
+            if(pos >= 2398){
+                
+            
+                $("#youtube").addClass("animated bounceIn ");
+
+            
+
+            }else{
+                $("#youtube").removeClass("animated bounceIn ");
+
+            }
+
+
+            if(pos >= 1333){
+                
+            
+                $("#youtube").addClass("animated bounceIn ");
+
+            
+
+            }else{
+                $("#youtube").removeClass("animated bounceIn ");
+
+            }
+        });
+       
+        })
+    
     
     </script>
 
@@ -221,7 +324,7 @@ include_once "includes/top.html";
     }
     
     #experience .card-header{
-        height:200px;
+        height:250px;
     
     }
     @media(max-width:267px){

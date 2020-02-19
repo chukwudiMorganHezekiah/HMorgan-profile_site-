@@ -51,6 +51,12 @@ if(isset($_POST['send'])){
                if(mysqli_close($conn)){
                    
 //mailing
+$to="morganhezekiah1@yahoo.com";
+$subject ="Contact me from your profil site";
+$message=$new_message;
+
+mail($to,$subject,$message);
+echo "<p style='color:green'>Message sent,thank you";
                
            }
            
