@@ -14,6 +14,11 @@
 <!--Fontawesome-->
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+<!--Animate css-->
+
+<link rel="stylesheet" href="Assets/CSS/animate.css" type="text/css">
+
 <!--Jquery-->
 <script type="text/javascript" src="Assets/JS/jquery-3.4.1.min.js"></script>
 
@@ -80,8 +85,8 @@
                                 <img src="Img/face.jpg" width="250" height="250" class="img-fluid rounded-top mx-5 d-none d-lg-block">
 
                                 <div class="media-body">
-                                    <h3 class="display-4 ml-3">I'm Hezekiah Morgan</h3>
-                                    <p class="text-muted ml-3">Programmer & Website Developer</p>
+                                    <h3 class="display-4 ml-1">I'm Hezekiah Morgan</h3>
+                                    <p class="text-muted ml-1">Programmer & Website Developer</p>
 
                                     <!-- Details -->
                                     <div class="container">
@@ -259,10 +264,10 @@
 
             <div class="col-lg-4 my-2">
                     <div class="card bg-white">
-                        <div class="card-header">
+                        <div class="card-header animated flip">
                                 <img src="" alt="" width="200px" height="80px" class="m-auto img-fluid">
                                 <h4 class="text-danger text-center">I'm a Desktop Application creator</h4>
-                                <p>Withthe knowledge of java and javafx, i create simple desktop applications  
+                                <p>With the knowledge of java and javafx, i create simple desktop applications  
                                 </p>
                         </div>
         
@@ -333,9 +338,9 @@
 </div>
 
     <!--Scroll to top button-->
-    <div id="top" style="position:fixed;bottom:30px; right:30px;display:none;cursor:pointer">
-        <span style="padding:20px; border:1px red solid;background:#ccc;">Top</span>
-
+    <div id="top" >
+        
+        <i class="fa fa-angle-double-up"></i>
     </div>
 
 </div>
@@ -410,6 +415,20 @@ body{
 #about{
     margin-top:-200px;
 }
+#top{
+    position:fixed;
+    bottom:10px; 
+    right:15px;
+    display:none;
+    cursor:pointer
+}
+#top i{
+    padding:15px;
+     border:0.5px black solid;
+     border-radius:10px;
+     background:transparent;
+     font-size:1.5rem;
+}
 
 #about .fa{
     color:white;
@@ -446,6 +465,13 @@ body{
 
 #experience .card-header{
     height:200px;
+
+}
+@media(max-width:267px){
+    #experience .card-header{
+    height:250px;
+
+}
 
 }
 #contactme hr{
