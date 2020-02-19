@@ -258,7 +258,7 @@ include_once "includes/top.html";
     /* Body background */
     
     body{
-        background: #ccc;
+        background: rgb(225,225,225);
         overflow-x: hidden;
     }
     
