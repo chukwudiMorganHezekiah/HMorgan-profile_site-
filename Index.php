@@ -108,7 +108,7 @@ include_once "includes/top.html";
             var email  = $("#email").val();
             var message = $("#message").val();
             var send = $("#send").val();
-            $("#errors").load("contact.php",{
+            $("#errors").load("controllers/contact.php",{
                 name:name,
                 email:email,
                 message:message,
