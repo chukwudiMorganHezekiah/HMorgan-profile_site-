@@ -150,13 +150,15 @@ include_once "includes/top.html";
     
     </script>
 
+
+
     <!--aNIMATIONS TO THE experiences divs-->
 
     <script type="text/javascript">
     $(document).ready(function(){
         $(window).scroll(function(){
             var pos = window.scrollY;
-            console.log(pos);
+            
 
             if(pos >= 1939){
                 
